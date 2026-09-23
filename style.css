@@ -10,9 +10,9 @@ body {
 
 .grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    width: 100vw;
-    height: 100vh;
+    grid-template-columns: repeat(3, 500px);
+    grid-template-rows: repeat(2, 500px);
+    gap: 0;
 }
 
 .case {
