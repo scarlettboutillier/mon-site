@@ -1,3 +1,13 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: white;
+}
+
 .grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -17,18 +27,20 @@
     display: block;
 }
 
-@media (max-width: 1000px) {
 
+/* Fenêtre plus petite */
+
+@media (max-width: 1000px) {
     .grid {
         grid-template-columns: repeat(2, 1fr);
     }
-
 }
 
-@media (max-width: 600px) {
 
+/* Téléphone */
+
+@media (max-width: 600px) {
     .grid {
         grid-template-columns: 1fr;
     }
-
 }
