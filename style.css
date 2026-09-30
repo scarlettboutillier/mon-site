@@ -4,14 +4,6 @@
     box-sizing: border-box;
 }
 
-html,
-body {
-    margin: 0;
-    padding: 0;
-    background: black;
-    min-height: 100%;
-}
-
 body {
     background-color: black;
     overflow-x: hidden;
