@@ -1,4 +1,4 @@
-```css
+
 * {
     margin: 0;
     padding: 0;
@@ -8,7 +8,8 @@
 html,
 body {
     width: 100%;
-    background-color: black;
+    margin: 0;
+    background: black;
 }
 
 body {
@@ -34,17 +35,14 @@ body {
     object-fit: cover;
 }
 
-/* Fenêtre moyenne : 2 colonnes × 3 lignes */
-@media (max-width: 1000px) {
+@media screen and (max-width: 1000px) {
     .grid {
         grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 }
 
-/* Petite fenêtre : 1 colonne × 6 lignes */
-@media (max-width: 600px) {
+@media screen and (max-width: 600px) {
     .grid {
         grid-template-columns: 1fr;
     }
 }
-```
