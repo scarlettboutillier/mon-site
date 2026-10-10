@@ -4,25 +4,19 @@
     box-sizing: border-box;
 }
 
-html,
 body {
-    width: 100%;
     background: black;
 }
 
-body {
-    overflow-x: hidden;
-}
-
 .grid {
-    display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
+    display: grid !important;
+    grid-template-columns: repeat(3, 1fr) !important;
     width: 100%;
 }
 
 .case {
-    width: 100%;
     aspect-ratio: 1 / 1;
+    min-width: 0;
     overflow: hidden;
 }
 
@@ -33,16 +27,14 @@ body {
     object-fit: cover;
 }
 
-/* 2 colonnes quand la fenêtre fait 1000 px ou moins */
 @media (max-width: 1000px) {
     .grid {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
+        grid-template-columns: repeat(2, 1fr) !important;
     }
 }
 
-/* 1 colonne quand la fenêtre fait 600 px ou moins */
 @media (max-width: 600px) {
     .grid {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr !important;
     }
 }
